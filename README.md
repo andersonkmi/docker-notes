@@ -51,6 +51,6 @@ $ docker image build -t <name> .
 
 The command above assumes you have a Dockerfile in the folder.
 
-## 2. Containers
+## 3. Containers
 
-## 3. Volumes
+## 4. Volumes
