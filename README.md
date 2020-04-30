@@ -43,6 +43,14 @@ $ docker image tag nginx andersonkmi/nginx
 $ docker image push andersonkmi/nginx
 ```
 
+### 1.5 In order to create an image:
+
+```
+$ docker image build -t <name> .
+```
+
+The command above assumes you have a Dockerfile in the folder.
+
 ## 2. Containers
 
 ## 3. Volumes
