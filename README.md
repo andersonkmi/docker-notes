@@ -90,3 +90,21 @@ $ docker container exec -it mysql_server bash
 ```
 
 ## 4. Volumes
+
+In order to list the volumes:
+
+```
+$ docker volume ls
+```
+
+To start a container with a named volume:
+
+```
+$ docker container run --publish 80:80 --detach --name mysql_server --env MYSQL_RANDOM_ROOT_pASSWORD=yes -v mysql-db:/var/lib/mysql mysql
+```
+
+To start a container with a bind mount:
+
+```
+$ docker container run -p 80:80 --detach --name nginx -v $(pwd):/usr/share/nginx/html nginx
+```
