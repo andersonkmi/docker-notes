@@ -17,13 +17,13 @@ $ docker logout
 
 ## 1. Images
 
-### 1.1 In order to list images:
+#### 1.1 In order to list images:
 
 ```
 $ docker image ls
 ```
 
-### 1.2 In order to pull an image from Docker hub:
+#### 1.2 In order to pull an image from Docker hub:
 
 ```
 $ docker image pull nginx
@@ -31,19 +31,19 @@ $ docker image pull nginx
 
 In this case the latest image will be pulled from the Docker hub
 
-### 1.3 In order to create a new image tag:
+#### 1.3 In order to create a new image tag:
 
 ```
 $ docker image tag nginx andersonkmi/nginx
 ```
 
-### 1.4 In order to push an image into Docker hub:
+#### 1.4 In order to push an image into Docker hub:
 
 ```
 $ docker image push andersonkmi/nginx
 ```
 
-### 1.5 In order to create an image:
+#### 1.5 In order to create an image:
 
 ```
 $ docker image build -t <name> .
