@@ -51,6 +51,24 @@ $ docker image build -t <name> .
 
 The command above assumes you have a Dockerfile in the folder.
 
+To remove unused images:
+
+```
+$ docker image prune
+```
+
+To remove all unused images:
+
+```
+$ docker image prune --all
+```
+
 ## 3. Containers
+
+In order to run a container:
+
+```
+$ docker container run 
+```
 
 ## 4. Volumes
