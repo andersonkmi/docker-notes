@@ -31,6 +31,12 @@ $ docker image pull nginx
 
 In this case the latest image will be pulled from the Docker hub
 
+If a specific version is to be pulled, then use the command:
+
+```
+$ docker image pull nginx:version
+```
+
 In order to create a new image tag:
 
 ```
