@@ -1,0 +1,18 @@
+version: '3.1'
+services:
+  maui-db:
+    build:
+      context: .
+      dockerfile: Dockerfile.mauidb
+    volumes:
+        - db-data:/var/lib/postgresql/data
+    container_name: maui-db
+    restart: always
+    ports:
+        - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+volumes:
+    db-data:
